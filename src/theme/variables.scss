@@ -22,7 +22,8 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
-
+$text-color:        #fff;
+$background-color:  #333333;
 
 
 // Named Color Variables
@@ -86,3 +87,14 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+//background color
+my-component{
+  background-color: #333333 !important;
+}
+ion-content {
+  background-color: #333333 !important;
+}
+ion-header{
+  background-color: #333333 !important;
+}

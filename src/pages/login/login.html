@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <section class="content-body">
+    <div class="container">
+        <div class="row">
+            <div id="innerBody" class="img-rounded col-lg-6 col-md-8 col-sm-12 col-lg-offset-3 col-md-offset-2">
+                <h2 class="clear"> Log in
+                </h2>
+                <hr/>
+                <form id="this_form" method="POST" class="form-horizontal">
+                    <ion-item>
+                    <div class="form-group">
+                        <ion-label  for="username" floating class="col-sm-4 control-label">Username</ion-label>
+                        <div class="col-sm-8">
+                            <ion-input type="text" id="username" name="username"
+                                   class="form-control"
+                                   required="required"></ion-input>
+                        </div>
+                    </div>
+                </ion-item>
+
+
+                    <ion-item>
+                    <div class="form-group">
+                        <ion-label for="password" fixed class="col-sm-4 control-label">Password</ion-label>
+                        <div class="col-sm-8">
+                            <ion-input type="password" name="password" class="form-control"
+                                   required="required"></ion-input>
+                        </div>
+                    </div>
+                    </ion-item>
+
+                    <div padding>
+                        <button ion-button color="primary" (click)="home()" block>Sign In</button>
+                    </div>
+                    <!--input type="submit" name="submit" value="Submit" class="btn btn-lg btn-success pull-right"/-->
+                    <button ion-button full color="#666666" type="submit" name="submit">Login</button>
+                
+                </form>
+                <script>
+                    $(function () {
+                        $('#username').focus();
+                    });
+                </script>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+</section>
+<button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>

@@ -1,18 +1,40 @@
-<ion-header>
+<ion-header name="new">
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    
+    <ion-title>Home </ion-title>
+    <!--link rel="icon" href="../assets/imgs/logo.png?" sizes="192x192"></link-->
+
   </ion-navbar>
+  <!--img src="../assets/imgs/logo.png" width="40px" style="display:inline-block" height="40px"/-->
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
+  <h3></h3>
+  <ion-img width="100" height="34" src="../assets/imgs/logo.png" style="align-items: center"></ion-img>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+    
+  <br>
+    We know that coffee is the only thing keeping every day from feeling like a Monday.<br>
+     Even Mondays. That’s why waiting for it in long queues is not helping world peace.<br>
+      So don’t. sMugg is a brand new app for your Android or iOS device that helps you skip the queues and get straight to the java.<br>
+       And by “skipping the queues” we mean you don’t even have to leave your car, <br>
+       the coffee comes to you. Now that’s coffee to go! <br>
+       So how does sMugg work? The app uses GPS technology to help you find and place your coffee order at a network of partner coffee shops.<br>
+        You can then arrange a pick-up time and a runner will meet you curb-side with your order ready to go.<br>
+         No need to get out of your car. Cappuccino? Sugar? No milk? sMugg comes with a range of features to help you get your order just right.<br>
+          You can even cancel or delay your pick-up time when you’re stuck in traffic, save your favourite coffee shops and orders for future use, <br>
+          and it allows your location to be tracked by coffee shops so they know when to get your order ready.
+          <br> Sound like your kind of cup of coffee? Download sMugg for your device via the links below and enjoy coffee without the queues. Oh, and world peace.
   </p>
+  <br>
+
+  
+  <button ion-button color="primary" (click)="login()" block>LogIn</button>
+  <button ion-button (click)='regPage()'>Register</button>
+  
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>
